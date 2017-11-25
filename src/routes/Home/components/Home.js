@@ -18,10 +18,11 @@ const instructions = Platform.select({
 export default class Home extends Component {
 
   componentDidMount() {
-      this.props.setMessage();
+      this.props.getCurrentLocation();
   }
 
   render() {
+    console.log("hellloooo")
     const region = {
                 latitude: 22.3095840,
                 longitude: 73.1864630,
@@ -32,7 +33,9 @@ export default class Home extends Component {
 
     return (
       <Container>
-        <MapContainer region = {region}/>
+      { this.props.region.latitude &&
+        <MapContainer region = {this.props.region}/>
+      }
       </Container>
     );
   }

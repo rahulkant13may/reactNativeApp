@@ -1,8 +1,8 @@
 import { combineReducers } from 'redux';
-import set_message from '../routes/Home/reducers/set_message'
+import HomeReducer from '../routes/Home/reducers/get_current_location'
 
 const rootReducer = combineReducers({ 
-	set_message
+	HomeReducer
 });
 
 export default rootReducer;

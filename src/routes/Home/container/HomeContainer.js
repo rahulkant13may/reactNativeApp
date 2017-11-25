@@ -1,15 +1,15 @@
 import Home from "../components/Home";
 import { connect } from 'react-redux';
-import { setMessage } from '../actions/action';
+import { getCurrentLocation } from '../actions/action';
 
 function mapStateToProps (state) {
   return {
-    set_message: state.set_message
+    region: state.HomeReducer.region
   }
 }
 
 const mapActionCreators = {
-  setMessage,
+  getCurrentLocation,
 };
 
 export default connect(
