@@ -1,8 +1,9 @@
-import React from "react";
+import React from 'react';
 import { View } from "native-base";
 import MapView from "react-native-maps";
 
 import styles from "./MapContainerStyles.js";
+import SearchBox from "../SearchBox";
 
 export const MapContainer = ({region}) => {
 
@@ -18,6 +19,7 @@ export const MapContainer = ({region}) => {
 		          	pinColor="red"/>
 
 			</MapView>
+			<SearchBox/>
 
 		</View>)
 }
