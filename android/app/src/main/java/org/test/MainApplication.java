@@ -9,6 +9,7 @@ import java.util.List;
 
 // Needed for `react-native link`
 // import com.facebook.react.ReactApplication;
+import com.arttitude360.reactnative.rngoogleplaces.RNGooglePlacesPackage;
 import com.oblador.vectoricons.VectorIconsPackage;
 
 public class MainApplication extends MultiDexApplication {
@@ -21,6 +22,7 @@ public class MainApplication extends MultiDexApplication {
 
         // Needed for `react-native link`
         // new MainReactPackage(),
+            new RNGooglePlacesPackage(),
             new VectorIconsPackage()
     );
   }

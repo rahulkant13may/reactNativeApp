@@ -1,8 +1,8 @@
 import { combineReducers } from 'redux';
-import HomeReducer from '../routes/Home/reducers/get_current_location'
+import { HomeReducer as home } from '../routes/Home/reducers/home_reducer';
 
 const rootReducer = combineReducers({ 
-	HomeReducer
+	home
 });
 
 export default rootReducer;

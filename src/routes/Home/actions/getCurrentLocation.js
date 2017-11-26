@@ -7,7 +7,7 @@ export function getCurrentLocation(){
 					type:"GET_CURRENT_LOCATION",
 					payload:position
 				});
-				console.log(position);
+				console.log("position",position);
 			},
 			(error)=> console.log(error.message),
 			{enableHighAccuracy: true, timeout: 20000, maximumAge:1000}

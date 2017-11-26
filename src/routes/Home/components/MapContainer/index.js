@@ -4,8 +4,9 @@ import MapView from "react-native-maps";
 
 import styles from "./MapContainerStyles.js";
 import SearchBox from "../SearchBox";
+import SearchResults from "../SearchResults";
 
-export const MapContainer = ({region}) => {
+export const MapContainer = ({region, getInputData}) => {
 
 	return (
 		<View style = {styles.container}>
@@ -19,7 +20,8 @@ export const MapContainer = ({region}) => {
 		          	pinColor="red"/>
 
 			</MapView>
-			<SearchBox/>
+			<SearchBox getInputData={getInputData}/>
+			<SearchResults/>
 
 		</View>)
 }

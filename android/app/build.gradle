@@ -52,6 +52,7 @@ repositories{
 }
 
 dependencies {
+    compile project(':react-native-google-places')
     compile project(':react-native-vector-icons')
   compile fileTree(dir: 'libs', include: ['*.jar'])
   testCompile 'junit:junit:4.12'

@@ -14,7 +14,9 @@ export default class Home extends Component {
   }
 
   render() {
-    console.log("hellloooo")
+    console.log("1234hellloooo")
+    console.log("region",this.props.region)
+    console.log("inputdta",this.props.inputData)
     const region = {
                 latitude: 22.3095840,
                 longitude: 73.1864630,
@@ -26,7 +28,7 @@ export default class Home extends Component {
     return (
       <Container>
       { this.props.region.latitude &&
-        <MapContainer region = {this.props.region}/>
+        <MapContainer region = {this.props.region} getInputData={this.props.getInputData}/>
       }
       </Container>
     );
